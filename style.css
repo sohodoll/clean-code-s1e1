@@ -53,6 +53,7 @@ input,button{
 
 .todo__row-wrapper {
     display: flex;
+    padding: 20px;
 }
 
 .button {
@@ -121,10 +122,6 @@ input,button{
 }
 
 /* completed */
-ul#completed-tasks label {
-    text-decoration: line-through
-    color: #888;
-}
 
 /* edit task */
 ul li input[type=text] {

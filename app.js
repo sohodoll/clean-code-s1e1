@@ -33,13 +33,14 @@ var createNewTaskElement = function(taskString) {
     //Each elements, needs appending
     checkBox.type="checkbox";
     editInput.type="text";
-    editInput.className="todo__task";
+    editInput.className="todo__task todo__text-input";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
     editButton.className="todo__edit-button button";
 
     deleteButton.className="todo__delete-button button";
     deleteButtonImg.src='./remove.svg';
+    deleteButtonImg.classList.add('button__image');
     deleteButton.appendChild(deleteButtonImg);
 
     //appending
@@ -68,9 +69,6 @@ var addTask = function() {
 //Edit an existing task.
 
 var editTask = function() {
-    console.log("Edit Task...");
-    console.log("Change 'edit' to 'save'");
-
     var listItem = this.parentNode;
     var editInput = listItem.querySelector('input[type=text]');
     var label = listItem.querySelector("label");
