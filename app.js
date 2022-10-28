@@ -36,9 +36,9 @@ var createNewTaskElement = function(taskString) {
     editInput.className="todo__task";
 
     editButton.innerText="Edit"; //innerText encodes special characters, HTML does not.
-    editButton.className="todo__edit-button";
+    editButton.className="todo__edit-button button";
 
-    deleteButton.className="todo__delete-button";
+    deleteButton.className="todo__delete-button button";
     deleteButtonImg.src='./remove.svg';
     deleteButton.appendChild(deleteButtonImg);
 
@@ -58,6 +58,7 @@ var addTask = function() {
     var listItem = createNewTaskElement(taskInput.value);
 
     //Append listItem to incompleteTaskHolder
+    listItem.classList.add('todo__list-item');
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem, taskCompleted);
 
