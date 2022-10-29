@@ -55,7 +55,7 @@ input,button{
 .todo__task {
     width: 56%;
     display: inline-block;
-    flex-grow: 1
+    flex-grow: 1;
 }
 
 .todo__row-wrapper {
@@ -138,7 +138,7 @@ input,button{
 /* edit task */
 
 .todo__text-input {
-    display: none
+    display: none;
 }
 
 .todo__add-input {
@@ -147,7 +147,7 @@ input,button{
 
 .todo__edit-input {
     display: inline-block;
-    width: 224px
+    width: 224px;
 }
 
 .todo__edit-label {
