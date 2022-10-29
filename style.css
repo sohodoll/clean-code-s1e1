@@ -11,11 +11,13 @@ ul {
     padding: 0px;
 }
 
-li, h3 {
+li, 
+h3 {
     list-style: none;
 }
 
-input,button{
+input,
+button{
     outline: none;
 }
 
@@ -32,7 +34,8 @@ input,button{
     width: 100%;
 }
 
-.introduction__container .introduction__anchor {
+.introduction__container,
+.introduction__anchor {
     font-family: fantasy, cursive;
 }
 
