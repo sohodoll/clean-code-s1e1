@@ -74,6 +74,7 @@ var editTask = function() {
     var label = listItem.querySelector("label");
     var editBtn = listItem.querySelector(".todo__edit-button");
     var containsClass = listItem.classList.contains("todo__edit-mode");
+    editInput.classList.add('todo__edit-input');
     
     //If class of the parent is edit-mode
     if(containsClass){
@@ -81,10 +82,13 @@ var editTask = function() {
         //switch to .editmode
         //label becomes the inputs value.
         label.innerText = editInput.value;
+        editInput.classList.remove('todo__edit-input');
+        label.classList.remove('todo__edit-label');
         editBtn.innerText = "Edit";
+
     }else{
+        label.classList.add('todo__edit-label');
         editInput.value = label.innerText;
-        console.log(editInput.value);
         editBtn.innerText = "Save";
     }
 

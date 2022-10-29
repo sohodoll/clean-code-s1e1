@@ -122,15 +122,19 @@ input,button{
 }
 
 /* edit task */
-ul li input[type=text] {
+.todo__text-input {
     display:none
 }
 
-ul li.todo__edit-mode input[type=text] {
+.todo__add-input {
+ display: block;
+}
+
+.todo__edit-input {
     display:inline-block;
     width:224px
 }
 
-ul li.todo__edit-mode label {
+.todo__edit-label {
     display:none;
 }
