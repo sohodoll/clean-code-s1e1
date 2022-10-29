@@ -1,4 +1,5 @@
 /* basic style and reset */
+
 body {
     background-color: #f8f8f8;
     color: #333;
@@ -9,9 +10,11 @@ ul {
     margin:0;
     padding: 0px;
 }
+
 li, h3 {
     list-style:none;
 }
+
 input,button{
     outline:none;
 }
@@ -38,13 +41,17 @@ input,button{
 @media (max-width:768px) {
     
     .introduction__container { text-align: center;
+
+    }
+
 }
-}
+
 .todo__container {
     display: block;
     width: 500px;
     margin: 0 auto 0;
 }
+
 .todo__task {
     width: 56%;
     display: inline-block;
@@ -65,10 +72,13 @@ input,button{
     font-family: Lato, sans-serif;
     cursor: pointer;
 }
+
 .button:hover {
     color: #3a3A3a;
 }
+
 /* headings */
+
 .todo__title,
 .todo__task-input {
     color: #333;
@@ -79,6 +89,7 @@ input,button{
     margin: 0;
     text-transform: uppercase;
 }
+
 .todo__text-input {
     margin: 0;
     font-size: 18px;
@@ -91,11 +102,13 @@ input,button{
     font-family: Lato, sans-serif;
     color: #888;
 }
+
 .todo__text-input:focus {
     color: #333;
 }
 
 /* Task list */
+
 .todo__list-item {
     overflow: hidden;
     padding: 20px 0;
@@ -117,11 +130,13 @@ input,button{
     transform: rotateZ(45deg);
     transition: transform 200ms ease-in;
 }
+
 .button__image:hover {
     transform: rotateZ(0);
 }
 
 /* edit task */
+
 .todo__text-input {
     display:none
 }
