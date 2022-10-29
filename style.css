@@ -145,7 +145,7 @@ button{
 }
 
 .todo__add-input {
- display: block;
+    display: block;
 }
 
 .todo__edit-input {
